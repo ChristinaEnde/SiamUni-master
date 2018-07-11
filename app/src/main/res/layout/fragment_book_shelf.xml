@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookShelfFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar_big"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#ff000000"
+            android:shadowDx="2"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="Course"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_left"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_left"
+            android:text="Login"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <android.siamuni.siamuni.MyGridView
+        android:id="@+id/bookShelf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="90dip"
+        android:fadingEdge="none"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp"/>
+
+</RelativeLayout>
